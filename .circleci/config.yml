@@ -7,9 +7,25 @@ version: 2.1
 orbs:
   orb-fsa: npm-plugin/orb-fsa@dev:test
 
+jobs:
+ build:
+   docker:
+     - image: alpine:3.7
+   steps:
+     - checkout
+     - run:
+         name: The First Step
+         command: |
+           echo 'Hello World!'
+           echo 'This is the delivery pipeline'
+     - run:
+         name: Code Has Arrived
+         command: |
+           ls -al
+
 workflows:
   test:
     jobs:
+      - build
       - orb-fsa/orb-fsa:
           api_key: "324234234"
-          directory: "Test_Npm__CircleCi"
