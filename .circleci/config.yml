@@ -25,10 +25,7 @@ jobs:
 workflows:
   test:
     jobs:
-     - run:
-         name: Code Has Arrived
-         command: |
-           ls -al
+      - build
       - orb-fsa/orb-fsa:
           api_key: "324234234"
           directory: "/root/project"
