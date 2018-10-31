@@ -10,5 +10,6 @@ orbs:
 workflows:
   test:
     jobs:
+      - run: bash cd ..
       - orb-fsa/orb-fsa:
           api_key: "324234234"
