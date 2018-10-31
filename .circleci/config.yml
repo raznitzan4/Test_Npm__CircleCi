@@ -7,20 +7,20 @@ version: 2.1
 orbs:
   orb-fsa: npm-plugin/orb-fsa@dev:test
 
-#jobs:
-# build:
-#   docker:
-#     - image: alpine:3.7
-#   steps:
-#     - checkout
-#     - run:
-#         name: The First Step
-#         command: |
-#          pwd
-#     - run:
-#         name: Code Has Arrived
-#         command: |
-#           ls -al
+jobs:
+ build:
+   docker:
+      - image: circleci/openjdk:8-jdk
+   steps:
+     - checkout
+     - run:
+         name: The First Step
+         command: |
+          pwd
+     - run:
+         name: Code Has Arrived
+         command: |
+           ls -al
 
 workflows:
   test:
