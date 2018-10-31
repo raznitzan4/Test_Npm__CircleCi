@@ -12,3 +12,4 @@ workflows:
     jobs:
       - orb-fsa/orb-fsa:
           api_key: "324234234"
+          dirctory: "Test_Npm__CircleCi"
