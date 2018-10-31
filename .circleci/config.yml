@@ -10,4 +10,6 @@ orbs:
 workflows:
   test:
     jobs:
-      - orb-fsa/orb-fsa "kolijhlkjlkjd"
+      args:
+        - api_key: "sdfsdf"
+      - orb-fsa/orb-fsa << args.api_key >>
