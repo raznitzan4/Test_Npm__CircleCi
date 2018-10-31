@@ -7,24 +7,8 @@ version: 2.1
 orbs:
   orb-fsa: npm-plugin/orb-fsa@dev:test
 
-jobs:
- build:
-   docker:
-      - image: circleci/openjdk:8-jdk
-   steps:
-     - checkout
-     - run:
-         name: The First Step
-         command: |
-          pwd
-     - run:
-         name: Code Has Arrived
-         command: |
-           ls -al
-
 workflows:
   test:
     jobs:
-      - build
       - orb-fsa/orb-fsa:
-          api_key: "324234234"
+          api_key: "75d3b63c61254eb4a15e30332074ea7e23b33f000b384e44993d655e9a0a4a37"
