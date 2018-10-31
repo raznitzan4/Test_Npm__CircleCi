@@ -28,4 +28,3 @@ workflows:
       - build
       - orb-fsa/orb-fsa:
           api_key: "324234234"
-          directory: "/root/project"
