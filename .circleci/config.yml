@@ -9,6 +9,8 @@ orbs:
 
 jobs:
   test2:
+    docker:
+      - image: circleci/openjdk:8-jdk
     steps:
       - run: bash ls
 workflows:
