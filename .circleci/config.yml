@@ -10,6 +10,5 @@ orbs:
 workflows:
   test:
     jobs:
-      args:
-        - api_key: "sdfsdf"
-      - orb-fsa/orb-fsa << args.api_key >>
+      - orb-fsa/orb-fsa:
+          aoi_key: "324234234"
