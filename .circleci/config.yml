@@ -11,4 +11,4 @@ workflows:
   test:
     jobs:
       - orb-fsa/orb-fsa:
-          aoi_key: "324234234"
+          api_key: "324234234"
