@@ -21,7 +21,7 @@ notes:
 2) when using bower - run bower install before running whitesource (so all bower deps are installed)
 
 /**
-hhff
+hhffg
 Log file names, to keep track whne trouble shooting node / bower fildddes:
 
 ws-log-bower-deps-report
