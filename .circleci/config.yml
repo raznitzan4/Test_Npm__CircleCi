@@ -7,15 +7,8 @@ version: 2.1
 orbs:
   orb-fsa: npm-plugin/orb-fsa@dev:test
 
-jobs:
-  test2:
-    docker:
-      - image: circleci/openjdk:8-jdk
-    steps:
-      - run: bash ls
 workflows:
   test:
     jobs:
-      - test2
       - orb-fsa/orb-fsa:
           api_key: "324234234"
