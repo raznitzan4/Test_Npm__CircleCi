@@ -10,4 +10,6 @@ orbs:
 workflows:
   test:
     jobs:
-      - orb-fsa/orb-fsa
+      - orb-fsa/orb-fsa:
+          context: WhiteSource
+          api_key: $API_KEY
