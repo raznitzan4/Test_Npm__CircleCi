@@ -10,5 +10,4 @@ orbs:
 workflows:
   test:
     jobs:
-      - orb-fsa/orb-fsa:
-          api_key: $(eval echo ${API_KEY})
+      - orb-fsa/orb-fsa
