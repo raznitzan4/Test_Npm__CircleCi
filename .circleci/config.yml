@@ -1,7 +1,6 @@
-# Java Maven CircleCI 2.0 configuration file
+# Java Maven CircleCI 2.1 configuration file
 #
-# Check https://circleci.com/docs/2.0/language-java/ for more details
-#
+
 version: 2.1
 
 orbs:
@@ -13,3 +12,4 @@ workflows:
       - orb-fsa/orb-fsa:
           context: WhiteSource
           api_key: $API_KEY
+          config_file_path: "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
