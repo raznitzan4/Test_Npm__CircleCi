@@ -15,7 +15,7 @@ projectVer ["Set projectVer , defaults to packge.json.version or bower.json.vers
 projectToken ["Set WS specific productToken (for advanced users) Both NODE N BOWER"]
 apiKey : ["WS apiKey as copied from website"]
 
-hhh
+hhhs
 notes: 
 1) make sure to run npm install before running whitesource (so all modules are installed)
 2) when using bower - run bower install before running whitesource (so all bower deps are installed)
