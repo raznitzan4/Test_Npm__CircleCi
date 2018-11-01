@@ -22,7 +22,7 @@ notes:
 
 /**
 hhffgg
-Log file names, to keep track whne trouble shooting node / bower fildddes:
+Log file names, to keep track whne trouble shooting node f/ bower fildddes:
 
 ws-log-bower-deps-report
 ws-log-bower-report
