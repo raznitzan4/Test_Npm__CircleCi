@@ -4,12 +4,12 @@
 version: 2.1
 
 orbs:
-  orb-fsa: npm-plugin/orb-fsa@dev:test
+  whitesource-scan: npm-plugin/whitesource-scan@dev:test
 
 workflows:
   test:
     jobs:
-      - orb-fsa/orb-fsa:
+      - whitesource-scan/scan:
 #          context: WhiteSource
           api_key: "fadsfs"
           config_file_path: "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
