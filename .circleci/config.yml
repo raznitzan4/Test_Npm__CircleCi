@@ -10,5 +10,5 @@ workflows:
   test:
     jobs:
       - orb-fsa/orb-fsa:
-          context: WhiteSource
+#          context: WhiteSource
           config_file_path: "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
