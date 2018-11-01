@@ -11,4 +11,5 @@ workflows:
     jobs:
       - orb-fsa/orb-fsa:
           context: WhiteSource
+          api_key: "22333"
           config_file_path: "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
