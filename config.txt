@@ -20,7 +20,7 @@ notes:
 1) make sure to run npm install before running whitesource (so all modules are installed)
 2) when using bower - run bower install before running whitesources (so all bower deps are installed)
 
-
+ddd
 /**
 hhffgg
 Log file names, to keep track whne trouble shooting node f/ bower fildddes:
