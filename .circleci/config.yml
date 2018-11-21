@@ -6,6 +6,10 @@ version: 2.1
 orbs:
   whitesource-scan: whitesource/whitesource-scan@dev:18.11.1
 
+executors:
+  - whiteosurce-scan/java:
+      docker-image: "chen470/fsa:18.11.1"
+
 workflows:
   test:
     jobs:
@@ -13,4 +17,3 @@ workflows:
           context: WhiteSource
           api_key: $API_KEY
           config_file_path:  "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
-          docker-image: chen470/fsa:18.11.1
