@@ -7,7 +7,8 @@ orbs:
   whitesource-scan: whitesource/whitesource-scan@dev:18.11.1
 
 executors:
-     - whitesource-scan/java:
+  default:
+     - whitesource-scan/docker:
          docker-image: "chen470/fsa:18.11.1"
 
 workflows:
