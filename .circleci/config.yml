@@ -4,10 +4,9 @@
 version: 2.1
 
 orbs:
-  whitesource-scan: whitesource/whitesource-scan@dev:test
+  whitesource-scan: whitesource/whitesource-scan@dev:18.11.1
 
 workflows:
-  test:
     jobs:
       - whitesource-scan/scan:
           context: WhiteSource
