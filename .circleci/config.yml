@@ -16,6 +16,6 @@ workflows:
 
 
 jobs:
-- whitesource-scan/scan:
+  whitesource-scan/scan
     docker:
-    - image: chen470/fsa:18.11.1
+      - image: chen470/fsa:18.11.1
