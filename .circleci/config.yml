@@ -20,3 +20,4 @@ jobs:
    docker:
      - image: chen470/fsa:18.11.1
    steps:
+     - checkout
