@@ -7,15 +7,11 @@ orbs:
   whitesource-scan: whitesource/whitesource-scan@dev:18.11.1
 
 workflows:
-  test:
+  test-orb:
     jobs:
-    - whitesource-scan/scan:
-        context: WhiteSource
-        api_key: $API_KEY
-        config_file_path:  "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
-
+      - upload-commands-example
 
 jobs:
-  whitesource-scan/scan
+  upload-commands-example
     docker:
-      - image: chen470/fsa:18.11.1
+      - image: circleci/node:10
