@@ -9,12 +9,13 @@ orbs:
 workflows:
   test:
     jobs:
-      - whitesource-scan/scan:
-          context: WhiteSource
-          api_key: $API_KEY
-          config_file_path:  "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
+    - whitesource-scan/scan:
+        context: WhiteSource
+        api_key: $API_KEY
+        config_file_path:  "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
 
 
 jobs:
-  docker:
+- whitesource-scan/scan:
+    docker:
     - image: chen470/fsa:18.11.1
