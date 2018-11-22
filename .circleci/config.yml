@@ -14,7 +14,7 @@ workflows:
           api_key: $API_KEY
           config_file_path:  "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
 
+
 jobs:
-  test:
-    docker:
-      - image: chen470/fsa:18.11.1
+  docker:
+    - image: chen470/fsa:18.11.1
