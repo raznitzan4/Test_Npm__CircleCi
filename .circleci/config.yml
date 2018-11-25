@@ -9,9 +9,10 @@ orbs:
 jobs:
   build:
     executor:
-      name: java
-      image-name: "chen470/fsa"
-      image-tag: "18.11.1"
+    - whitesource-scan/scan:
+        name: java
+        image-name: chen470/fsa
+        image-tag: "18.11.1"
     steps:
       - checkout
 
