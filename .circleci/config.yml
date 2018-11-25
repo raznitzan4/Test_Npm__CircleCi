@@ -12,6 +12,7 @@ jobs:
       name: java
       image-name: "chen470/fsa"
       image-tag: "18.11.1"
+    steps: []
 
 workflows:
   test:
