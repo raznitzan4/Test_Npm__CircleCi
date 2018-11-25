@@ -6,13 +6,15 @@ version: 2.1
 orbs:
   whitesource-scan: whitesource/whitesource-scan@dev:18.11.1
 
+jobs:
+  build:
+    executor:
+      name: java
+      image-name: "chen470/fsa"
+      image-tag: "18.11.1"
+
 workflows:
   test:
-    build:
-      executor:
-        name: java
-        image-name: "chen470/fsa"
-        image-tag: "18.11.1"
     jobs:
     - whitesource-scan/scan:
         context: WhiteSource
