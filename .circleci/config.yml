@@ -8,10 +8,13 @@ orbs:
 
 workflows:
   test:
+    build:
+      executor:
+        name: java
+        image-name: "chen470/fsa"
+        image-tag: "18.11.1"
     jobs:
     - whitesource-scan/scan:
         context: WhiteSource
         api_key: $API_KEY
         config_file_path:  "https://s3.amazonaws.com/file-system-agent/SNAPSHOT/whitesource-fs-agent.config"
-        docker:
-        - image: chen470/fsa:18.11.1
